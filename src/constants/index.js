@@ -179,21 +179,21 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Yander Ecommerce",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A dynamic E-commerce platform leveraging Django, a Python-based web framework. Integrated essential features, including user authentication, seamless payment gateway integration, and efficient order management. Crafted a visually appealing and user-responsive interface through skillful utilization of HTML5, CSS3, and Bootstrap technologies.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
+          name: "django",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: " bootstrap",
+          color: "blue-text-gradient",
         },
       ],
       image: carrent,
