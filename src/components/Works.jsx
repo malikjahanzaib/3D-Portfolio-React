@@ -69,7 +69,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
-          Welcome to my projects section! Here, you'll find a selection of my completed projects, each linked to its GitHub repository. These projects demonstrate my skill in navigating diverse technologies while solving complex problems. Your interest in exploring these showcases is truly valued, as they embody my dedication to innovation and effective problem-solving.
+          Welcome to my projects section! Here, you'll find a selection of my completed projects, each linked to its GitHub repository or other relevant platforms. These projects demonstrate my skill in navigating diverse technologies while solving complex problems. Your interest in exploring these showcases is truly valued, as they embody my dedication to innovation and effective problem-solving.
         </motion.p>
       </div>
 

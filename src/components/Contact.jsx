@@ -23,6 +23,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (form.name.trim() === '' || form.email.trim() === '' || form.message.trim() === '') {
+      alert('Please fill in all fields.');
+      return;
+    }
+    
     setLoading(true);
     //template_6ignsek
     // service_m3vz2r7

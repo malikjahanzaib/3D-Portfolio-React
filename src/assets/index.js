@@ -27,10 +27,11 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import CCSF from "./company/CCSF.png";
 import BMCP from "./company/BMCP.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import yander from "./yander.png";
+import weatherapp from "./weatherapp.png";
+import githubfinder from "./githubfinder.png";
+import type2heart from "./type2heart.jpg";
+import covtrail from "./covtrail.png";
 
 export {
   logo,
@@ -58,9 +59,11 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   CCSF,
-  BMCP
+  BMCP,
+  yander,
+  weatherapp,
+  githubfinder,
+  type2heart,
+  covtrail
 };

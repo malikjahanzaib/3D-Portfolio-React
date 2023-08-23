@@ -19,12 +19,14 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
+    yander,
+    weatherapp,
+    githubfinder,
+    type2heart,
+    covtrail,
     CCSF,
-    BMCP
+    BMCP,
   } from "../assets";
   
   export const navLinks = [
@@ -179,9 +181,9 @@ import {
   
   const projects = [
     {
-      name: "Yander Ecommerce",
+      name: "Yander E-commerce",
       description:
-        "A dynamic E-commerce platform leveraging Django, a Python-based web framework. Integrated essential features, including user authentication, seamless payment gateway integration, and efficient order management. Crafted a visually appealing and user-responsive interface through skillful utilization of HTML5, CSS3, and Bootstrap technologies.",
+        "A dynamic E-commerce platform fueled by Django. It seamlessly integrates vital components like user authentication, payment gateway, and order management. The interface, artfully crafted using HTML5, CSS3, and Bootstrap, ensures both visual appeal and user-friendly responsiveness.",
       tags: [
         {
           name: "django",
@@ -196,50 +198,104 @@ import {
           color: "blue-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: yander,
+      source_code_link: "https://github.com/malikjahanzaib/yander-ecom-final-1",
     },
     {
-      name: "Job IT",
+      name: "Weather App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A user-friendly weather application that effortlessly delivers real-time weather updates, including temperature, high/low forecasts, and overall conditions for any city. Stay informed with ease and precision.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "javascript",
+          color: "yellow-text-gradient",
         },
         {
           name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "html",
+          color: "orange-text-gradient",
         },
         {
           name: "css",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: weatherapp,
+      source_code_link: "https://github.com/malikjahanzaib/weather-app-js",
+    },
+    {
+      name: "GitHub Finder",
+      description:
+        "GitHub search app that efficiently retrieves user profiles and their top 5 repositories, complete with essential attributes like Watchers, Stars, Forks, and more. Simplifying the exploration of GitHub data for enhanced user experience.",
+      tags: [
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "bootswatch",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: githubfinder,
+      source_code_link: "https://github.com/malikjahanzaib/GitHub-Finder",
+    },
+    {
+      name: "Type2Heart",
+      description:
+        "Machine Learning derived model to predict the risk of Heart Failure among T2DM patients, utilizing Random Survival Forests as the learning model for accurate predictions.",
+      tags: [
+        {
+          name: "python",
+          color: "green-text-gradient",
+        },
+        {
+          name: "scikit-learn",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "numpy",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "matplotlib",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "pandas",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: type2heart,
+      source_code_link: "https://github.com/malikjahanzaib/Type2Heart",
+    },
+    {
+      name: "CovTrail",
+      description:
+        "Epidemiological and supervised machine learning algorithms to analyze the global COVID-19 data and estimate the total number of globally reported cases in the future.",
+      tags: [
+        {
+          name: "r",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "ggplot",
+          color: "green-text-gradient",
+        },
+        {
+          name: "dplyr",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: covtrail,
+      source_code_link: "https://github.com/malikjahanzaib/CovTrail",
     },
   ];
   
