@@ -12,7 +12,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Jahanzaib</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Software Developer/Product Designer.
+            I am a Software Developer/Data Engineer.
             {/* <br className="sm:block hidden" /> use this break tag in case of larger p tag content for smaller devices */}
           </p>
         </div>
