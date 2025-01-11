@@ -253,12 +253,11 @@
     inset -2px -2px 6px rgba(255, 255, 255, 0.2);
   transform: translateY(2px) scale(0.98); /* Pressed effect */
 }
+
+@media (max-width: 640px) { /* Mobile breakpoint */
+  .neumorphic-button {
+    padding: 4px 10px; /* Smaller padding */
+    border-radius: 20px; /* Slightly smaller roundness for mobile */
+  }
   
-
- 
-
-
-
-
-
-
+}

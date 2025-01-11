@@ -117,15 +117,17 @@ const Navbar = () => {
                   onClick={() => setToggle(false)}
                 >
                   {link.id === "resume" ? (
-                    // Added the special Resume NavLink for mobile
-                    <a
-                      href="/Jahanzaib_Malik_Resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="neumorphic-button"
-                    >
-                      {link.title}
-                    </a>
+                    // Added spacing specifically for Resume
+                    <div className="mt-6">
+                      <a
+                        href="/Jahanzaib_Malik_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="neumorphic-button"
+                      >
+                        {link.title}
+                      </a>
+                    </div>
                   ) : (
                     <a href={`#${link.id}`}>{link.title}</a>
                   )}
