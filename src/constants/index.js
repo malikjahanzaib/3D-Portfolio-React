@@ -27,6 +27,8 @@ import {
     covtrail,
     CCSF,
     BMCP,
+    OC,
+    IQ
   } from "../assets";
   
   export const navLinks = [
@@ -34,10 +36,10 @@ import {
       id: "about",
       title: "About",
     },
-    /*({
+    {
       id: "work",
       title: "Work",
-    },*/
+    },
     {
       id: "contact",
       title: "Contact",
@@ -127,29 +129,46 @@ import {
       iconBg: "#E6DEDD",
       date: "December 2019 - Feb 2020",
       points: [
-        "Improved the official website's Front End/UI, leading to 30% faster load time through optimization techniques and image compression.",
-        "Assisted in developing a CRM project, resulting in 20% increased sales productivity and 15% faster customer response time.",
-        "Worked in an Agile environment, reducing project delivery time by 10% through adaptive planning and regular feedback.",
-        "Optimized code and implemented Responsive Design, reducing page load sizes by 25% and boosting mobile traffic by 20%.",
-        "Maintained a 95% client satisfaction rate through effective communication and incorporating client feedback.",
+        "Led the website revamp using MERN stack, achieving a 30% faster load time, enhanced mobile responsiveness, and boosting traffic by 20%.",
+        "Utilized data analytics to track user behavior, identify performance bottlenecks, and optimize site responsiveness.",
+        "Assisted in developing a Stealth CRM project, resulting in 20% increased sales productivity and 15% faster customer response time.",
       ],
     },
     {
-      title: "Software Engineer and Cyber Security Intern",
+      title: "Software Engineer Intern",
       company_name: "City and County of San Francisco",
       icon: CCSF,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "May 2022 - December 2022",
       points: [
-        "Researched and evaluated 5+ Chatbot frameworks for MyApps System, resulting in the identification of three optimal frameworks for diverse use cases.",
-        "Developed and tested proof of concept implementations, effectively resolving 60% of user queries, resulting in a 30% reduction in support ticket volumes.",
-        "Collaborated with a 6-member cross-functional team to gather requirements and optimize Chatbot performance.",
-        "Implemented NLP and machine learning libraries, resulting in a 25% improvement in chatbot understanding and response accuracy.",
-        "Conducted 5+ knowledge-sharing sessions, enhancing team-wide proficiency in chatbot development and NLP techniques.",
-        "Conducted extensive FIDO MFA - YubiKey testing, ensuring seamless authentication for over 30,000 employees, with a 20% decrease in security-related incidents.",
-        "Prepared comprehensive technical documentation, contributing to a 30% reduction in onboarding time for new team members.",
+        "Led the chatbot framework assessment for MyApps System, developed a proof of concept using Microsoft Bot Framework Composer, reducing ticket volume by 30%. Utilized Bot Framework Web Chat and Inspector for testing and debugging.",
+        "Integrated QnA Maker to manage FAQs, enhancing interactions in Microsoft Teams and Web Chat channels. Applied user behavior analysis and predictive modeling to optimize chatbot performance, identifying user interaction trends and addressing common queries.",
+        "Mitigated security incidents by 20% with FIDO MFA - YubiKey testing, improving authentication for 30k+ government employees.",
       ],
     },
+    {
+      title: "Software Engineer",
+      company_name: "One Community Inc.",
+      icon: OC,
+      iconBg: "#E6DEDD",
+      date: "September 2023 - November 2023",
+      points: [
+        "Led MERN stack code reviews and QA for the Highest Good Network application, ensuring feature integrity across front-end, back-end, and database. Reviewed over 150+ pull requests, enhancing code quality and application performance by 30%.",
+        "Contributed to front-end development with a focus on UI/UX enhancements using React.js. Streamlined UI consistency resulting in a 30% improvement in navigation efficiency and a 25% increase in user task completion rate.",
+      ],
+    },
+    {
+      title: "Data Analyst",
+      company_name: "iQuasar LLC",
+      icon: IQ,
+      iconBg: "#E6DEDD",
+      date: "October 2023 - Present",
+      points: [
+        "Conducted market research using Pandas and NumPy for data analysis and visualization. Leveraged APIs from Acquisition.gov, Sam.gov, FPDS, and Govtribe to enhance market forecast accuracy. Developed an automated Python pipeline for solicitation data extraction with BeautifulSoup and requests, improving RFP assessment accuracy by 25%.",
+        "Designed an automated proposal workflow with AWS Lambda, handling the extraction, filtering, and transformation of solicitation data using Pandas, and dynamically populating templates for various proposal documents. Developed a React.js frontend for automated outline generation and section mapping, reducing document preparation time by 30%.",
+        "Developed a modular framework for managing proposal documents, ensuring accurate mapping to solicitation requirements and improving document consistency and compliance, resulting in a 25% increase in proposal quality and success rates.",
+      ],
+    }
   ];
   
   const testimonials = [

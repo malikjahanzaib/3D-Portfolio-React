@@ -27,6 +27,8 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import CCSF from "./company/CCSF.png";
 import BMCP from "./company/BMCP.png";
+import OC from "./company/OC.png";
+import IQ from "./company/IQ.png";
 import yander from "./yander.png";
 import weatherapp from "./weatherapp.png";
 import githubfinder from "./githubfinder.png";
@@ -61,6 +63,8 @@ export {
   tesla,
   CCSF,
   BMCP,
+  OC,
+  IQ,
   yander,
   weatherapp,
   githubfinder,
