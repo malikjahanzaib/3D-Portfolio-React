@@ -123,15 +123,26 @@ import {
   const experiences = [
    
     {
-      title: "Web Developer Intern",
-      company_name: "BMCP Solutions",
-      icon: BMCP,
+      title: "Data Analyst",
+      company_name: "iQuasar LLC",
+      icon: IQ,
       iconBg: "#E6DEDD",
-      date: "December 2019 - Feb 2020",
+      date: "October 2023 - Present",
       points: [
-        "Led the website revamp using MERN stack, achieving a 30% faster load time, enhanced mobile responsiveness, and boosting traffic by 20%.",
-        "Utilized data analytics to track user behavior, identify performance bottlenecks, and optimize site responsiveness.",
-        "Assisted in developing a Stealth CRM project, resulting in 20% increased sales productivity and 15% faster customer response time.",
+        "Conducted market research using Pandas and NumPy for data analysis and visualization. Leveraged APIs from Acquisition.gov, Sam.gov, FPDS, and Govtribe to enhance market forecast accuracy. Developed an automated Python pipeline for solicitation data extraction with BeautifulSoup and requests, improving RFP assessment accuracy by 25%.",
+        "Designed an automated proposal workflow with AWS Lambda, handling the extraction, filtering, and transformation of solicitation data using Pandas, and dynamically populating templates for various proposal documents. Developed a React.js frontend for automated outline generation and section mapping, reducing document preparation time by 30%.",
+        "Developed a modular framework for managing proposal documents, ensuring accurate mapping to solicitation requirements and improving document consistency and compliance, resulting in a 25% increase in proposal quality and success rates.",
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company_name: "One Community Inc.",
+      icon: OC,
+      iconBg: "#E6DEDD",
+      date: "September 2023 - November 2023",
+      points: [
+        "Led MERN stack code reviews and QA for the Highest Good Network application, ensuring feature integrity across front-end, back-end, and database. Reviewed over 150+ pull requests, enhancing code quality and application performance by 30%.",
+        "Contributed to front-end development with a focus on UI/UX enhancements using React.js. Streamlined UI consistency resulting in a 30% improvement in navigation efficiency and a 25% increase in user task completion rate.",
       ],
     },
     {
@@ -147,28 +158,17 @@ import {
       ],
     },
     {
-      title: "Software Engineer",
-      company_name: "One Community Inc.",
-      icon: OC,
+      title: "Web Developer Intern",
+      company_name: "BMCP Solutions",
+      icon: BMCP,
       iconBg: "#E6DEDD",
-      date: "September 2023 - November 2023",
+      date: "December 2019 - Feb 2020",
       points: [
-        "Led MERN stack code reviews and QA for the Highest Good Network application, ensuring feature integrity across front-end, back-end, and database. Reviewed over 150+ pull requests, enhancing code quality and application performance by 30%.",
-        "Contributed to front-end development with a focus on UI/UX enhancements using React.js. Streamlined UI consistency resulting in a 30% improvement in navigation efficiency and a 25% increase in user task completion rate.",
+        "Led the website revamp using MERN stack, achieving a 30% faster load time, enhanced mobile responsiveness, and boosting traffic by 20%.",
+        "Utilized data analytics to track user behavior, identify performance bottlenecks, and optimize site responsiveness.",
+        "Assisted in developing a Stealth CRM project, resulting in 20% increased sales productivity and 15% faster customer response time.",
       ],
     },
-    {
-      title: "Data Analyst",
-      company_name: "iQuasar LLC",
-      icon: IQ,
-      iconBg: "#E6DEDD",
-      date: "October 2023 - Present",
-      points: [
-        "Conducted market research using Pandas and NumPy for data analysis and visualization. Leveraged APIs from Acquisition.gov, Sam.gov, FPDS, and Govtribe to enhance market forecast accuracy. Developed an automated Python pipeline for solicitation data extraction with BeautifulSoup and requests, improving RFP assessment accuracy by 25%.",
-        "Designed an automated proposal workflow with AWS Lambda, handling the extraction, filtering, and transformation of solicitation data using Pandas, and dynamically populating templates for various proposal documents. Developed a React.js frontend for automated outline generation and section mapping, reducing document preparation time by 30%.",
-        "Developed a modular framework for managing proposal documents, ensuring accurate mapping to solicitation requirements and improving document consistency and compliance, resulting in a 25% increase in proposal quality and success rates.",
-      ],
-    }
   ];
   
   const testimonials = [
