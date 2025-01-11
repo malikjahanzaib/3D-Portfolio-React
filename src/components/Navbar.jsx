@@ -77,7 +77,19 @@ const Navbar = () => {
                 active === link.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.id === "resume" ? (
+                // Added the special Resume NavLink
+                <a
+                  href="/Jahanzaib_Malik_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="neumorphic-button"
+                  >
+                  {link.title}
+                </a>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -104,7 +116,19 @@ const Navbar = () => {
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => setToggle(false)}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.id === "resume" ? (
+                    // Added the special Resume NavLink for mobile
+                    <a
+                      href="/Jahanzaib_Malik_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="neumorphic-button"
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>

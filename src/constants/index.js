@@ -41,8 +41,18 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "resume",
+      title: "Resume",
+      external: true, // Flag this as an external link
+      link: "/resume.pdf", // Path to your resume
     },
   ];
   

@@ -217,3 +217,48 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+.neumorphic-button {
+  background: linear-gradient(145deg, #6a5efc, #4a79ff); /* Gradient for depth */
+  border: 2px solid rgba(255, 255, 255, 0.15); /* Softer border for elegance */
+  border-radius: 25px; /* Slightly reduced roundness */
+  box-shadow: 
+    0 4px 8px rgba(74, 91, 248, 0.25),  /* Subtle glow below */
+    0 -4px 8px rgba(74, 91, 248, 0.25), /* Subtle glow above */
+    4px 0 8px rgba(74, 91, 248, 0.25),  /* Subtle glow right */
+    -4px 0 8px rgba(74, 91, 248, 0.25); /* Subtle glow left */
+  color: #ffffff;
+  padding: 10px 30px; /* Reduced padding for a smaller size */
+  font-size: 16px; /* Slightly smaller font size */
+  font-weight: 600; /* Refined font weight for elegance */
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Ensure smooth gradient change */
+}
+
+.neumorphic-button:hover {
+  background: linear-gradient(145deg, #4a79ff, #6a5efc); /* Reverse gradient on hover */
+  box-shadow: 
+    0 8px 16px rgba(74, 91, 248, 0.4),  /* Balanced glow all around */
+    0 -8px 16px rgba(74, 91, 248, 0.4),
+    8px 0 16px rgba(74, 91, 248, 0.4),
+    -8px 0 16px rgba(74, 91, 248, 0.4);
+  transform: translateY(-2px) scale(1.05); /* Lift effect */
+  color: #ffffff; /* Text stays crisp and clear */
+}
+
+.neumorphic-button:active {
+  box-shadow: 
+    inset 2px 2px 6px rgba(74, 91, 248, 0.4), 
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2);
+  transform: translateY(2px) scale(0.98); /* Pressed effect */
+}
+  
+
+ 
+
+
+
+
+
+
