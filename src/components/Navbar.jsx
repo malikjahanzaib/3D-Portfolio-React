@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -53,20 +54,46 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        {/* Logo Section */}
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Jahanzaib Malik
-          </p>
-        </Link>
+        {/* Logo Section with Social Media Icons */}
+        <div className="flex items-center gap-3">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
+            <p className="text-white text-[18px] font-bold cursor-pointer flex">
+              Jahanzaib Malik
+            </p>
+          </Link>
+
+          {/* Separator */}
+         <div className="h-6 w-[1px] bg-gray-400 opacity-40"></div>
+          
+          {/* Social Media Icons */}
+          <div className="flex gap-1">
+            <a
+              href="https://github.com/malikjahanzaib"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-[20px] hover:text-[#6a5efc] transition duration-300 hover:shadow-[0px_0px_15px_2px] hover:shadow-[#6a5efc] rounded-full p-2 bg-transparent"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/jahanzaibmalik"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-[20px] hover:text-[#6a5efc] transition duration-300 hover:shadow-[0px_0px_15px_2px] hover:shadow-[#6a5efc] rounded-full p-2 bg-transparent"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+
 
         {/* Desktop Navigation Links */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -93,6 +120,8 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        
 
         {/* Mobile Navigation Menu */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
