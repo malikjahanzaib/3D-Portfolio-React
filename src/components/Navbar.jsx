@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <Link
             to="/"
-            className="flex items-center gap-2"
+            className="flex items-center"
             onClick={() => {
               setActive("");
               window.scrollTo(0, 0);
@@ -74,7 +74,7 @@ const Navbar = () => {
          <div className="h-6 w-[1px] bg-gray-400 opacity-40"></div>
           
           {/* Social Media Icons */}
-          <div className="flex gap-1">
+          <div className="flex">
             <a
               href="https://github.com/malikjahanzaib"
               target="_blank"
