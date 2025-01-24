@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import profilePhoto from "./profilePhoto.jpeg"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -37,6 +38,7 @@ import covtrail from "./covtrail.png";
 
 export {
   logo,
+  profilePhoto,
   backend,
   creator,
   mobile,

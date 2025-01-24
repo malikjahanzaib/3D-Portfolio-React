@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, profilePhoto, menu, close } from "../assets";
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -64,7 +64,7 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
+            <img src={profilePhoto} alt="Jahanzaib Malik" className="w-14 h-14 object-cover rounded-full border-2 border-yellow-500 mr-1" />
             <p className="text-white text-[18px] font-bold cursor-pointer flex">
               Jahanzaib Malik
             </p>
