@@ -34,6 +34,7 @@ import weatherapp from "./weatherapp.png";
 import githubfinder from "./githubfinder.png";
 import type2heart from "./type2heart.jpg";
 import covtrail from "./covtrail.png";
+import issue2pr from "./issue2pr.png";
 
 export {
   logo,
@@ -69,5 +70,6 @@ export {
   weatherapp,
   githubfinder,
   type2heart,
-  covtrail
+  covtrail,
+  issue2pr
 };

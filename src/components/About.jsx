@@ -41,7 +41,10 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-17 max-w-3xl leading-[30px]'
       >
-      I am a passionate and versatile software developer with a profound expertise in Python, JavaScript, and cutting-edge frameworks such as React and Django. With a strong foundation in software engineering, I specialize in crafting efficient and elegant solutions to complex problems. My journey in the world of technology has been enriched by my deep-rooted interest in machine learning, allowing me to seamlessly bridge the gap between software development and data-driven insights. As you explore my projects and accomplishments, you'll discover my commitment to creating impactful and innovative solutions that reflect both my technical prowess and creative vision. Together, we can breathe life into your concepts and make them a reality!
+      I’m a software engineer who enjoys building reliable, thoughtful solutions across the full stack. With a background in Python, JavaScript, and frameworks like React and FastAPI, I focus on creating systems that are both practical and scalable.<br /><br />
+      My experience spans backend development, cloud-native applications on AWS and Kubernetes, and integrating machine learning models into real-world software. Whether it’s designing secure APIs, improving user interfaces, or applying deep learning to uncover patterns in data, I approach each project with an emphasis on clarity, usability, and long-term maintainability.<br /><br />
+      Technology is always evolving, and I enjoy working at the intersection of software engineering and applied AI — continuously learning, refining, and contributing where I can.<br /><br />
+      Feel free to explore my work — every project reflects a commitment to thoughtful development and real-world impact.
     </motion.p>
     <div className='mt-20 flex flex-wrap gap-10'>
       {services.map((service, index) => (

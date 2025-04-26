@@ -23,6 +23,7 @@ import {
     yander,
     weatherapp,
     githubfinder,
+    issue2pr,
     type2heart,
     covtrail,
     CCSF,
@@ -61,19 +62,19 @@ import {
   
   const services = [
     {
-      title: "Python Developer",
+      title: "Systems & API Engineering",
       icon: web,
     },
     {
-      title: "React Developer",
+      title: "Component-Driven UI",
       icon: mobile,
     },
     {
-      title: "Web Developer",
+      title: "Cloud-Native Stacks",
       icon: backend,
     },
     {
-      title: "Machine Learning and Data Science",
+      title: "ML Models & Data Pipelines",
       icon: creator,
     },
   ];
@@ -136,15 +137,17 @@ import {
   const experiences = [
    
     {
-      title: "Data Analyst",
+      title: "Sr. Technical Associate (Software Development) ",
       company_name: "iQuasar LLC",
       icon: IQ,
       iconBg: "#E6DEDD",
       date: "October 2023 - Present",
       points: [
-        "Conducted market research using Pandas and NumPy for data analysis and visualization. Leveraged APIs from Acquisition.gov, Sam.gov, FPDS, and Govtribe to enhance market forecast accuracy. Developed an automated Python pipeline for solicitation data extraction with BeautifulSoup and requests, improving RFP assessment accuracy by 25%.",
-        "Designed an automated proposal workflow with AWS Lambda, handling the extraction, filtering, and transformation of solicitation data using Pandas, and dynamically populating templates for various proposal documents. Developed a React.js frontend for automated outline generation and section mapping, reducing document preparation time by 30%.",
-        "Developed a modular framework for managing proposal documents, ensuring accurate mapping to solicitation requirements and improving document consistency and compliance, resulting in a 25% increase in proposal quality and success rates.",
+        "Led development of Proposal Pro, an AI-powered React + FastAPI platform that automated proposal summary and outline generation—reducing manual drafting time by over 60% and accelerating response turnaround.",
+        "Engineered secure JWT-based authentication, dynamic project dashboards, and file workflows supporting 1000+ document operations(upload, tagging, versioning) with encrypted GCS storage.",
+        "Integrated Gemini Flash/Thinking models for real-time AI content generation, enabling users to dynamically tailor outputs—improving drafting accuracy and user satisfaction by 40%.",
+        "Directed architectural design, delivering a scalable MVP in 5 sprints (15 weeks) and initiating modularization for long-term maintainability; scoped 3+ future modules (Compliance Matrix, Response Gen, Content Gen).",
+        "Served as Technical SME for 15+ software development proposals, translating architecture into technical narratives—contributing to a 30% increase in RFP win rate during high-SLA cycles.",
       ],
     },
     {
@@ -213,71 +216,33 @@ import {
   
   const projects = [
     {
-      name: "Yander E-commerce",
+      name: "Issue2PR",
       description:
-        "A dynamic E-commerce platform fueled by Django. It seamlessly integrates vital components like user authentication, payment gateway, and order management. The interface, artfully crafted using HTML5, CSS3, and Bootstrap, ensures both visual appeal and user-friendly responsiveness.",
+        "Issue2PR is an open source tool that automates the process of turning GitHub Issues into working Pull Requests. It listens for new issues, analyzes tasks with GPT-4, generates code changes, creates a branch, and opens a pull request — helping maintainers save time and streamline collaboration. Built with Python, GitHub APIs, and OpenAI models, Issue2PR reduces manual effort and accelerates open source development.",
       tags: [
         {
-          name: "django",
+          name: "python",
           color: "green-text-gradient",
         },
         {
-          name: "javascript",
-          color: "yellow-text-gradient",
-        },
-        {
-          name: " bootstrap",
-          color: "blue-text-gradient",
-        },
-      ],
-      image: yander,
-      source_code_link: "https://github.com/malikjahanzaib/yander-ecom-final-1",
-    },
-    {
-      name: "Weather App",
-      description:
-        "A user-friendly weather application that effortlessly delivers real-time weather updates, including temperature, high/low forecasts, and overall conditions for any city. Stay informed with ease and precision.",
-      tags: [
-        {
-          name: "javascript",
-          color: "yellow-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "html",
+          name: "Flask",
           color: "orange-text-gradient",
         },
         {
-          name: "css",
+          name: "GitHubAPI",
           color: "blue-text-gradient",
         },
-      ],
-      image: weatherapp,
-      source_code_link: "https://github.com/malikjahanzaib/weather-app-js",
-    },
-    {
-      name: "GitHub Finder",
-      description:
-        "GitHub search app that efficiently retrieves user profiles and their top 5 repositories, complete with essential attributes like Watchers, Stars, Forks, and more. Simplifying the exploration of GitHub data for enhanced user experience.",
-      tags: [
         {
-          name: "javascript",
+          name: "GPT4",
           color: "yellow-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "bootswatch",
-          color: "blue-text-gradient",
+          name: "Webhook",
+          color: "pink-text-gradient",
         },
       ],
-      image: githubfinder,
-      source_code_link: "https://github.com/malikjahanzaib/GitHub-Finder",
+      image: issue2pr,
+      source_code_link: "https://github.com/malikjahanzaib/issue2pr",
     },
     {
       name: "Type2Heart",
@@ -329,6 +294,75 @@ import {
       image: covtrail,
       source_code_link: "https://github.com/malikjahanzaib/CovTrail",
     },
+    {
+      name: "Yander E-commerce",
+      description:
+        "A dynamic E-commerce platform fueled by Django. It seamlessly integrates vital components like user authentication, payment gateway, and order management. The interface, artfully crafted using HTML5, CSS3, and Bootstrap, ensures both visual appeal and user-friendly responsiveness.",
+      tags: [
+        {
+          name: "django",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: " bootstrap",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: yander,
+      source_code_link: "https://github.com/malikjahanzaib/yander-ecom-final-1",
+    },
+    {
+      name: "GitHub Finder",
+      description:
+        "GitHub search app that efficiently retrieves user profiles and their top 5 repositories, complete with essential attributes like Watchers, Stars, Forks, and more. Simplifying the exploration of GitHub data for enhanced user experience.",
+      tags: [
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "bootswatch",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: githubfinder,
+      source_code_link: "https://github.com/malikjahanzaib/GitHub-Finder",
+    },
+    {
+      name: "Weather App",
+      description:
+        "A user-friendly weather application that effortlessly delivers real-time weather updates, including temperature, high/low forecasts, and overall conditions for any city. Stay informed with ease and precision.",
+      tags: [
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "html",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "css",
+          color: "blue-text-gradient",
+        },
+      ],
+      image: weatherapp,
+      source_code_link: "https://github.com/malikjahanzaib/weather-app-js",
+    },
+    
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

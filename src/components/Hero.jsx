@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { Typewriter } from 'react-simple-typewriter';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -11,9 +12,18 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Jahanzaib</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a Software Engineer.
-            {/* <br className="sm:block hidden" /> use this break tag in case of larger p tag content for smaller devices */}
+          <p className={`${styles.heroSubText} mt-4 text-[22px] text-gray-300 font-normal leading-snug`}>
+            Code first. Cloud second. Machine learning somewhere in between.          
+          </p>
+          <p className="mt-2 text-[14px] text-gray-500 font-mono italic">
+            <Typewriter
+              words={['[shipping features, squashing bugs, refactoring the universe.]']}
+              cursor
+              cursorStyle="_"
+              typeSpeed={50}
+              deleteSpeed={0}
+              delaySpeed={1000}
+            />
           </p>
         </div>
       </div>
