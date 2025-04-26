@@ -6,6 +6,7 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import Modal from './Modal';
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,17 +16,36 @@ const Contact = () => {
     message: '',
   });
   const [loading, setLoading] = useState(false);
+  const [modal, setModal] = useState({
+    isOpen: false,
+    title: '',
+    message: '',
+    type: 'info'
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({...form, [name]: value});
   }
 
+  const showModal = (title, message, type = 'info') => {
+    setModal({
+      isOpen: true,
+      title,
+      message,
+      type
+    });
+  };
+
+  const closeModal = () => {
+    setModal(prev => ({ ...prev, isOpen: false }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (form.name.trim() === '' || form.email.trim() === '' || form.message.trim() === '') {
-      alert('Please fill in all fields.');
+      showModal('Error', 'Please fill in all fields.', 'error');
       return;
     }
     
@@ -46,7 +66,7 @@ const Contact = () => {
       'l-9jEO_NoUa2CdGtj'
     ).then(() => {
       setLoading(false);
-      alert('Thank you. I will get back to you as soon as possible.');
+      showModal('Success', 'Thank you. I will get back to you as soon as possible.', 'success');
       
       setForm({
         name: "",
@@ -56,7 +76,7 @@ const Contact = () => {
     }, (error) => {
       setLoading(false);
       console.log(error);
-      alert("Something went wrong.");
+      showModal('Error', 'Something went wrong. Please try again later.', 'error');
     })
 
   }
@@ -131,6 +151,14 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      <Modal
+        isOpen={modal.isOpen}
+        onClose={closeModal}
+        title={modal.title}
+        message={modal.message}
+        type={modal.type}
+      />
     </div>
   )
 }
