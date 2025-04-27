@@ -15,9 +15,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-4 text-[22px] text-gray-300 font-normal leading-snug`}>
             I build APIs, ship containers, and occasionally trick machines into thinking.
           </p>
-          <div className="mt-2 pl-2 flex items-center font-mono text-[14px]">
+          <div className="mt-2 pl-2 flex items-center font-mono tracking-tight text-[8px] sm:text-[10px] md:text-[12px]">
             <span className="text-purple-400">$</span>
-            <span className="ml-2 text-indigo-400 transition duration-300 ease-in-out hover:drop-shadow-[0_0_6px_rgba(34,197,94,0.6)]">
+            <span className="ml-2 text-indigo-400 transition duration-300 ease-in-out hover:drop-shadow-[0_0_6px_rgba(167,139,250,0.6)]">
               <Typewriter
                 words={['shipping features && squashing bugs && refactoring the universe']}
                 cursor
@@ -28,6 +28,7 @@ const Hero = () => {
               />
             </span>
           </div>
+
 
         </div>
       </div>
