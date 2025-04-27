@@ -13,18 +13,22 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Jahanzaib</span></h1>
           <p className={`${styles.heroSubText} mt-4 text-[22px] text-gray-300 font-normal leading-snug`}>
-            Code first. Cloud second. Machine learning somewhere in between.          
+            I build APIs, ship containers, and occasionally trick machines into thinking.
           </p>
-          <p className="mt-2 text-[14px] text-gray-500 font-mono italic">
-            <Typewriter
-              words={['[shipping features, squashing bugs, refactoring the universe.]']}
-              cursor
-              cursorStyle="_"
-              typeSpeed={50}
-              deleteSpeed={0}
-              delaySpeed={1000}
-            />
-          </p>
+          <div className="mt-2 pl-2 flex items-center font-mono text-[14px]">
+            <span className="text-purple-400">$</span>
+            <span className="ml-2 text-indigo-400 transition duration-300 ease-in-out hover:drop-shadow-[0_0_6px_rgba(34,197,94,0.6)]">
+              <Typewriter
+                words={['shipping features && squashing bugs && refactoring the universe']}
+                cursor
+                cursorStyle="_"
+                typeSpeed={50}
+                deleteSpeed={0}
+                delaySpeed={1000}
+              />
+            </span>
+          </div>
+
         </div>
       </div>
 
